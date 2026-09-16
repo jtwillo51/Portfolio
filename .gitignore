@@ -1,0 +1,15 @@
+# Private research — not part of the site, must never be deployed or committed.
+guide.md
+
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+Thumbs.db
+preview.html
+dist-preview/
+
+# Cloudflare's deploy tool keeps local state here; secrets never belong in git.
+.wrangler/
+.env*

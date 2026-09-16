@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jeremy Willoughby">
+<meta name="theme-color" content="#e8e7e1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1116" media="(prefers-color-scheme: dark)">
+
+<!-- Runs before first paint so a stored theme never flashes the other one. -->
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+<link rel="preload" href="/fonts/anybody.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/martian.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<!--app-head-->
+</head>
+<body>
+<div id="app"><!--app-html--></div>
+<script type="module" src="/src/entry-client.ts"></script>
+</body>
+</html>

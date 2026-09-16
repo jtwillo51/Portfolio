@@ -1,0 +1,10 @@
+# Cloudflare Pages reads this file from the root of the deploy.
+#
+# no-transform stops the Cloudflare proxy from rewriting pages on the way out:
+# no Web Analytics beacon (which would break the colophon's "no third-party
+# requests") and no email obfuscation (which replaces the address with
+# "[email protected]" and only restores it with JavaScript). What a visitor
+# receives is exactly what the build wrote, which is also what Vue hydrates.
+# The rest of the value matches Pages' own default.
+/*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
